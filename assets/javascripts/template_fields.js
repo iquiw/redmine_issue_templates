@@ -81,7 +81,7 @@ const vm = new Vue({
       if (trackerPulldown.value === '') {
         this.$el.style.display = 'none'
       }
-      trackerPulldown.addEventListener('change', event => {
+      $(trackerPulldown).on('change', event => {
         if (event.target.value === '') {
           this.$el.style.display = 'none'
           return

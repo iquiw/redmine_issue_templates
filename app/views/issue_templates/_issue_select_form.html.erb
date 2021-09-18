@@ -87,7 +87,7 @@
   templateNS.isTriggeredBy = '<%= is_triggered_by %>'
   templateNS.setPulldown('<%= @issue.tracker.id %>')
 
-  document.getElementById('issue_template').addEventListener('change', (event) => {
+  $('#issue_template').on('change', (event) => {
     templateNS.changeTemplatePlace()
     templateNS.loadTemplate()
   })
